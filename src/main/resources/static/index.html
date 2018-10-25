@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.0/examples/album/ -->
+<html lang="en">
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+        <title>Album example for Bootstrap</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/album.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="collapse bg-dark" id="navbarHeader">
+                <div class="container">
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark box-shadow">
+                <div class="container d-flex justify-content-between">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <br>
+        <div id="actionField" style="display: flex; justify-content: center; align-items: center">
+            <form id="formShare">
+                <div class="input-group mb-3" style="" >
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Ciudad</span>
+                    </div>
+                    <input id="inputShare" required type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                           style="margin-right: 20px;">
+                
+                    <button id="intraday" onclick="getWeather()" type="button" class="btn btn-secondary">Buscar</button>
+                </div>
+                
+                
+            </form>
+        </div>
+        <br>
+        
+        <p id="name" style="margin-left: 20%"></p>
+        <p id="time" style="margin-left: 20%"></p>
+        <p id="pressure" style="margin-left: 20%"></p>
+        <p id="temp" style="margin-left: 20%"></p>
+        <p id="humidity" style="margin-left: 20%"></p>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="js//popper.min.js"></script>
+        <script src="js//bootstrap.min.js"></script>
+        <script src="js//holder.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/AxiosWeather.js"></script>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg>
+    </body>
+</html>
